@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
+import { AppHeader } from './Components/app-header/app-header.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'app works!';
+  appheader : AppHeader = new AppHeader ("Ben Fast Food", "Food", "Drinks", "AboutUs");
 }
